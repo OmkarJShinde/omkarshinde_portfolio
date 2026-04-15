@@ -1,0 +1,112 @@
+body {
+  font-family: Arial;
+  background-color: #f8f9fa;
+}
+
+/* Navbar fixed असल्यामुळे gap */
+.section-space {
+  margin-top: 100px;
+}
+
+/* 🔥 IMPORTANT FIX (Navbar scroll issue fix) */
+section {
+  scroll-margin-top: 90px;
+}
+
+/* profile image */
+.profile-img {
+  width: 200px;
+  border: 3px solid #0d6efd;
+}
+
+/* headings */
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  border-bottom: 2px solid #0d6efd;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* cards */
+.card {
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* remove underline from clickable cards */
+.card-link {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.card-link * {
+  text-decoration: none !important;
+}
+
+.card-link:hover {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+/* links styling */
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #0d6efd;
+}
+
+/* small spacing */
+.card p {
+  margin: 5px 0;
+}
+
+/* headings inside cards */
+.card h5 {
+  color: #0d6efd;
+}
+
+canvas {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0d6efd;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  animation: pulse 1.5s infinite;
+}
+
+.contact-float a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 🔥 flashing animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
